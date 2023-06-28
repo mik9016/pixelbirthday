@@ -1,8 +1,9 @@
-@import url("animations.css");
 
 :root {
     --background-black: #04132B;
     --text-color: #DEDECB;
+    --disabled-background:rgb(232, 190, 190);
+    --error-color: rgb(212, 31, 31);
     font-family: 'Courier', sans-serif;
 }
 
@@ -12,6 +13,12 @@ body {
     color: var(--text-color);
     height: 100vh;
     width: 100vw;
+}
+.error{
+    color: var(--error-color);
+}
+.btnDisabled{
+    background-color: var(--disabled-background);
 }
 
 .input{

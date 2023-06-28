@@ -8,6 +8,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
      <link rel="stylesheet" href="index.css">
+     <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+     <link rel="manifest" href="assets/site.webmanifest">
+     <link rel="mask-icon" href="assets/safari-pinned-tab.svg" color="#5bbad5">
+     <meta name="msapplication-TileColor" content="#da532c">
+     <meta name="theme-color" content="#ffffff">
     <title>Unicorn</title>
 </head>
 <body class="center">
@@ -20,35 +27,45 @@
             Z tej okazji chciałbym podarować Ci coś, co mam nadzieję przypadnie Ci do gustu!
         </p>  
         <p>
-            Ale zanim dowiesz się co to tak naprawdę jest (a pewnie się domyślasz, nie znasz jednak szczegółów).
+            Ale zanim dowiesz się co to tak naprawdę jest.
         </p>
-        <p> Będziesz musiała sama odgadnąć!</p>
-        <p>Twój Mikuś</p>
-        <button class="btn" onclick="hideIntroText()">Dalej</button>
+        <p> Będziesz musiała zagrać w grę i sama odgadnąć!</p>
+
+        <p>Otwórz Biografię Herbiego Hancocka i wyjmij z niej kopertę!</p>
+        
+        <div class="center" id="input0Wrapper">
+            <label for="letter0">Wpisz literę by odblokować następne zadanie!</label>
+            <input type="text" id="letter0" name="letter0" class="input">
+        </div>
+        <button class="btn" onclick="hideIntroText()" id="introBtn">Dalej</button>
     </div>
     <div id="mapa" class="unvisible center text">
+        <p>Herbie podzielił się z wami funduszem kawowym :)</p>
         <p>Teraz czeka was wycieczka!</p>
-        <p>Przed wyjściem jednak otwórz biografię Herbiego i wyciągnij kopertę!</p>
-        <p>Herbie chciał się z wami podzielić funduszem kawowym!</p>
+        <p>Idźcie do Coffea, i zamówcie kawkę :)</p>
         <p>Po kawce, musicie się uważnie rozejrzeć i sprawdzić czy w pobliżu nie ma jakiegoś Gymnasium?</p>
-        <p>Jeśli takowe znajdziecie, to spójrzcie w górę i na nazwę jego patrone i zapiszcie przedostatnią literę jego imienia!</p>
+        <p>Jeśli takowe znajdziecie, to spójrzcie w górę i na nazwę jego patrona i zapiszcie przedostatnią literę jego imienia!</p>
 
         <a href="https://goo.gl/maps/cEQBDU6zgr3voLdJ8">
             <img src="./assets/mapa.png" alt="pic" width="400" height="400" class="map" > 
         </a>
         <!-- DO DODANIA INPUT HANDLING -->
-        <!-- <div class="center">
-            <label for="letter1">Wpisz literę</label>
+        <div class="center" id="input1Wrapper">
+            <label for="letter1">Wpisz literę by odblokować następne zadanie!</label>
             <input type="text" id="letter1" name="letter1" class="input">
-            <button class="btn" onclick="hideIntroText()">Dalej</button>
-        </div> -->
-        <button class="btn" onclick="hideMaps()">Dalej</button>
+            <p>PS. Kolejność odblokowywanych liter jest losowa!</p>
+        </div>
+        <button class="btn" onclick="hideMaps()" id="mapBtn">Dalej</button>
     </div>
     <div id="playground" class="unvisible center text">
         <p>Teraz moje rybki trzeba iść na plac zabaw!</p>
         <p>Coś mi się wydaje, by rozwiązać zagadkę musicie iść na Freiaplatz!</p>
         <p>Po przybyciu zanotujcie pierwszą literę ulicy na której znajduje się piekarnia Hanneman! </p>
-        <button class="btn" onclick="hidePlayground()">Dalej</button>
+        <div class="center" id="input2Wrapper">
+            <label for="letter2">Wpisz literę by odblokować następne zadanie!</label>
+            <input type="text" id="letter2" name="letter2" class="input">
+        </div>
+        <button class="btn" onclick="hidePlayground()" id="playgroundBtn">Dalej</button>
     </div>
     <div id="ice" class="unvisible center text">
         <p>
@@ -57,7 +74,11 @@
             Coś mi mówi, że przyda nam się 4 litera z jej nazwy!
         </p>
         <p>No i oczywiście ktoś tu zasłużył na lody!</p>
-        <button class="btn" onclick="hideIce()">Dalej</button>
+        <div class="center" id="input3Wrapper">
+            <label for="letter3">Wpisz literę by odblokować następne zadanie!</label>
+            <input type="text" id="letter3" name="letter3" class="input">
+        </div>
+        <button class="btn" onclick="hideIce()" id="iceBtn">Dalej</button>
     </div>
     <div id="home" class="unvisible center text">
         <p>
@@ -67,7 +88,7 @@
          <p>Otwórzcie kopertę i zobaczce co nas wszystkich czeka!</p>   
         <button class="btn" onclick="hideHome()">Dalej</button>
     </div>
-    <div id="end" class="unvisible center text">
+    <div id="end" class="unvisible center text" >
        <p>Wszystkiego najlepszego!</p>
         <p> Kocham Was!</p>
     </div>
