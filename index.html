@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="index.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link rel="stylesheet" href="index.css">
+    <title>Unicorn</title>
+</head>
+<body class="center">
+    <section class="mainWrapper center">
+        <img src="./assets/unicorn.jpg" alt="pic" width="400" height="400" class="image" id="mainImage"> 
+    <div id="intro" class="text">
+        <h1>Najkochańsza Domisiu Moja!</h1>
+        <p>Już niedługo obchodzisz swoje 30 urodziny!</p>
+        <p>
+            Z tej okazji chciałbym podarować Ci coś, co mam nadzieję przypadnie Ci do gustu!
+        </p>  
+        <p>
+            Ale zanim dowiesz się co to tak naprawdę jest (a pewnie się domyślasz, nie znasz jednak szczegółów).
+        </p>
+        <p> Będziesz musiała sama odgadnąć!</p>
+        <p>Twój Mikuś</p>
+        <button class="btn" onclick="hideIntroText()">Dalej</button>
+    </div>
+    <div id="mapa" class="unvisible center text">
+        <p>Teraz czeka was wycieczka!</p>
+        <p>Przed wyjściem jednak otwórz biografię Herbiego i wyciągnij kopertę!</p>
+        <p>Herbie chciał się z wami podzielić funduszem kawowym!</p>
+        <p>Po kawce, musicie się uważnie rozejrzeć i sprawdzić czy w pobliżu nie ma jakiegoś Gymnasium?</p>
+        <p>Jeśli takowe znajdziecie, to spójrzcie w górę i na nazwę jego patrone i zapiszcie przedostatnią literę jego imienia!</p>
+
+        <a href="https://goo.gl/maps/cEQBDU6zgr3voLdJ8">
+            <img src="./assets/mapa.png" alt="pic" width="400" height="400" class="map" > 
+        </a>
+        <!-- DO DODANIA INPUT HANDLING -->
+        <!-- <div class="center">
+            <label for="letter1">Wpisz literę</label>
+            <input type="text" id="letter1" name="letter1" class="input">
+            <button class="btn" onclick="hideIntroText()">Dalej</button>
+        </div> -->
+        <button class="btn" onclick="hideMaps()">Dalej</button>
+    </div>
+    <div id="playground" class="unvisible center text">
+        <p>Teraz moje rybki trzeba iść na plac zabaw!</p>
+        <p>Coś mi się wydaje, by rozwiązać zagadkę musicie iść na Freiaplatz!</p>
+        <p>Po przybyciu zanotujcie pierwszą literę ulicy na której znajduje się piekarnia Hanneman! </p>
+        <button class="btn" onclick="hidePlayground()">Dalej</button>
+    </div>
+    <div id="ice" class="unvisible center text">
+        <p>
+            Tu na Rüdigerstraße 46
+            jest lodziarnia.
+            Coś mi mówi, że przyda nam się 4 litera z jej nazwy!
+        </p>
+        <p>No i oczywiście ktoś tu zasłużył na lody!</p>
+        <button class="btn" onclick="hideIce()">Dalej</button>
+    </div>
+    <div id="home" class="unvisible center text">
+        <p>
+            Czas na drzemkę! Trzeba iść do domku!
+        </p>
+        <p>A w domku czeka rozwiązanie zagadki w książce o siatkach graficznych!</p>
+         <p>Otwórzcie kopertę i zobaczce co nas wszystkich czeka!</p>   
+        <button class="btn" onclick="hideHome()">Dalej</button>
+    </div>
+    <div id="end" class="unvisible center text">
+       <p>Wszystkiego najlepszego!</p>
+        <p> Kocham Was!</p>
+    </div>
+    
+</section>
+
+</body>
+</html>
