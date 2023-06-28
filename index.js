@@ -44,7 +44,7 @@ const answers = {
 
 
 function validate(input,answer) {
-    return input.value.toString() === answer
+    return input.value.toString().toUpperCase() === answer
 }
 
 function showEnd(){
